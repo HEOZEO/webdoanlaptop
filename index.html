@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+     <!-- menu -->
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo ROG -->
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logorog1.png" alt="Republic of Gamers">
+        </a>
+
+        <!-- Menu Links Centered -->
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mua Hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sáng Tạo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tải Xuống</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cộng Đồng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nổi Bật</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hỗ Trợ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ------- -->
+        <div class="d-flex align-items-center">
+            <div class="search-box">
+                <img src="img/timkiem.png" alt="tìm kiếm" id="searchIcon" onclick="toggleSearch()">
+            </div>
+            <div class="cart-icon">
+                <a href="giohang.html">
+                    <img src="img/cart.png" alt="Cart">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+        <input type="text" class="form-control" placeholder="Tìm kiếm...">
+        <span class="close-search" onclick="toggleSearch()">&times;</span>
+    </div>
+</nav>
+    <!-- end menu -->
+
+     <!-- gioi thieu-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <!-- Main Container -->
+    <div class="container mt-5">
+        <!-- san pham -->
+        <div class="text-center">
+            <h1>KHÁM PHÁ SẢN PHẨM CỦA CHÚNG TÔI</h1>
+            <p> Các thiết bị cao cấp của chúng tôi nâng cao trải nghiệm chơi game với màn hình hàng đầu, đồ họa đỉnh cao và hệ thống tản nhiệt đột phá.</p>
+        </div>
+       
+        <section class="photo-gallery py-4 py-xl-5">    
+               
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox=""                                                              style="margin-left: 0px;">
+                    <div class="col-xl-2 item"><a href=""><img class="img-fluid" src="assets/img/chuot.webp"                                                                  width="211" height="237" style="margin-bottom: 8px;"><img class="img-fluid" src="assets/img/ipad.webp" width="211" height="119"></a></div>
+                    <div class="col-xl-2 item"><a href=""><img class="img-fluid" src="assets/img/phim.webp"                                                                   width="211" height="119" style="margin-bottom: 8px;"><img class="img-fluid" src="assets/img/bodoi.webp" width="211" height="237"></a></div>
+                    <div class="col-xl-2 item"><a href=""><img class="img-fluid" src="assets/img/tainghe.webp"                                                                width="211" height="237" style="margin-bottom: 8px;"><img class="img-fluid" src="assets/img/cam.webp" width="211" height="119"></a></div>
+                    <div class="col-xl-2 item"><a href=""><img class="img-fluid" src="assets/img/loa.jpg"                                                                     width="211" height="356"></a></div>
+                    <div class="col-xl-2 item"><a href=""><img class="img-fluid" src="assets/img/but.webp"                                                                    width="211" height="178" style="margin-bottom: 8px;"><img class="img-fluid" src="assets/img/doanh.webp" width="211" height="178"></a></div>
+                    <div class="col-xl-2 item"><a href=""><img class="img-fluid" src="assets/img/choigame.webp"                                                               width="211" height="356" style="padding-bottom: 0px;"></a></div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+    
+          <!-- end san pham --> 
+    </div>  
+    
+    
+            <!-- phần blog -->
+            <div class="blog">
+                <div class="container mt-1">
+                    <section class="blog-section py-5">
+                        <h2 class="text-center mb-5 text-white">Tin tức & Blog</h2>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- Blog 1 -->
+                            <div class="col">
+                                <a href="link-to-blog1.html" class="card blog h-100">
+                                    <img src="img/danh gia rog.webp" class="card-img-top" alt="Blog 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đánh giá chi tiết Laptop ROG 2024</h5>
+                                        <p class="card-text">Khám phá hiệu suất và công nghệ đột phá của dòng Laptop ROG mới nhất.</p>
+                                    </div>
+                                </a>
+                            </div>
+                    
+                            <!-- Blog 2 -->
+                            <div class="col">
+                                <a href="link-to-blog2.html" class="card blog h-100">
+                                    <img src="img/công nghệ.webp" class="card-img-top" alt="Blog 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Xu hướng công nghệ chơi game 2024</h5>
+                                        <p class="card-text">Những thay đổi đáng chú ý trong công nghệ chơi game năm 2024, từ đồ họa đến VR.</p>
+                                    </div>
+                                </a>
+                            </div>
+                    
+                            <!-- Blog 3 -->
+                            <div class="col">
+                                <a href="link-to-blog3.html" class="card blog h-100">
+                                    <img src="img/sinhvien.webp" class="card-img-top" alt="Blog 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cách chọn Laptop phù hợp cho sinh viên</h5>
+                                        <p class="card-text">Gợi ý những dòng laptop tốt nhất dành cho sinh viên với giá hợp lý và hiệu năng cao.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Blog 1 -->
+                        <div class="col">
+                            <a href="link-to-blog1.html" class="card blog h-100">
+                                <img src="img/blog1.webp" class="card-img-top" alt="Blog 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Review sản phẩm - Nhận liền tay</h5>
+                                    <p class="card-text">Khám phá hiệu suất và công nghệ đột phá của dòng Laptop ROG mới nhất.</p>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <!-- Blog 2 -->
+                        <div class="col">
+                            <a href="link-to-blog2.html" class="card blog h-100">
+                                <img src="img/blog2.webp" class="card-img-top" alt="Blog 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ưu đãi ASUS Education</h5>
+                                    <p class="card-text">Những thay đổi đáng chú ý trong công nghệ chơi game năm 2024, từ đồ họa đến VR.</p>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <!-- Blog 3 -->
+                        <div class="col">
+                            <a href="link-to-blog3.html" class="card blog h-100">
+                                <img src="img/blog3.webp" class="card-img-top" alt="Blog 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mua laptop ASUS nhận gói Adobe Creative Cloud</h5>
+                                    <p class="card-text">Gợi ý những dòng laptop tốt nhất dành cho sinh viên với giá hợp lý và hiệu năng cao.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+<!-- end Blog -->
+      <!-- Phần chương trình và sự kiện -->
+<div class="event-section py-5">
+    <div class="container">
+        <div class="container text-center">
+            <h2 class="font-weight-bold" style="font-size: 28px; color: black;">Chương trình và Sự kiện</h2>
+            <a href="#" class="text-primary" style="font-size: 16px; text-decoration: none;">Xem tất cả &gt;</a>
+        </div>
+      
+    <div class="container">
+
+        <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM1.webp"                                                                         width="464" height="232"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM2.webp"                                                                         width="464" height="237"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM3.webp"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM4.webp"                                                                         width="464" height="232"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM5.webp"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM7.webp"                                                                        width="464" height="202"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM6.webp"                                                                        width="367" height="210"></a></div>
+            <div class="col-xl-3 item"><a href=""><img class="img-fluid" src="assets/img/KM8.webp"                                                                        width="367" height="210"></a></div>
+        </div>
+    </div>
+    <div class="container mt-5"><hr></div>  
+</div>
+
+
+<!-- end Blog -->
+
+<div class="noibat">
+    <div class="featured-products-section">
+        <div class="container ">
+            <h2>SẢN PHẨM NỔI BẬT</h2>
+            <div class="row row-cols-1 row-cols-md-5 g-2">
+                <!-- Card 1 -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 23%</span>
+                            <div class="product__image">
+                                <img src="img/moden.webp" class="card-img-top" alt="MSI Modern 15">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop MSI Modern 15</h6>
+                                <h5 class="price">14.990.000đ</h5>
+                                <p class="extra-discount">Giảm 4.500.000đ</p>
+                               
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 14%</span>
+                            <div class="product__image">
+                                <img src="img/aspire3.webp" class="card-img-top" alt="Acer Aspire 3">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop Acer Aspire 3</h6>
+                                <h5 class="price">11.990.000đ</h5>
+                                <p class="extra-discount">Giảm 2.000.000đ</p>
+                           
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 16%</span>
+                            <div class="product__image">
+                                <img src="img/hp15.webp" class="card-img-top" alt="HP 15">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop HP 15</h6>
+                                <h5 class="price">15.490.000đ</h5>
+                                <p class="extra-discount">Giảm 3.000.000đ</p>
+                               
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 19%</span>
+                            <div class="product__image">
+                                <img src="img/tuf15.webp" class="card-img-top" alt="ASUS TUF Gaming F15">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop ASUS TUF Gaming</h6>
+                                <h5 class="price">20.290.000đ</h5>
+                                <p class="extra-discount">Giảm 4.700.000đ</p>
+                          
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 24%</span>
+                            <div class="product__image">
+                                <img src="img/vivobook.webp" class="card-img-top" alt="ASUS Gaming VivoBook">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop ASUS VivoBook</h6>
+                                <h5 class="price">19.290.000đ</h5>
+                                <p class="extra-discount">Giảm 6.000.000đ</p>
+                            
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5"><hr></div>
+
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-pills justify-content-center mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="catalog-page.html">
+                    <i class="fas fa-laptop"></i> Laptop
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-mouse"></i> Chuột
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-keyboard"></i> Bàn phím
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-headphones"></i> Tai nghe
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-cogs"></i> Linh Kiện
+                </a>
+            </li>
+        </ul>
+        
+        
+
+        <!-- Content -->
+         <div class="ban">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-5 g-2">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <a href="com.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 10%</span>
+                                <div class="product__image">
+                                    <img src="img/macbook_5_1.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Apple MacBook Air M1 256GB 2020</h6>
+                                    <h5 class="price">18.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 12%</span>
+                                <div class="product__image">
+                                    <img src="img/gf63.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop MSI Gaming GF63 Thin 11UC-1228VN</h6>
+                                    <h5 class="price">16.490.000đ
+                                    </h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 19%</span>
+                                <div class="product__image">
+                                    <img src="img/lenovo.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop Lenovo LOQ 15IAX9 83GS001RVN</h6>
+                                    <h5 class="price">21.290.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 12%</span>
+                                <div class="product__image">
+                                    <img src="img/tuf.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop ASUS TUF Gaming A15 FA506NF-HN005W</h6>
+                                    <h5 class="price">15.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 4%</span>
+                                <div class="product__image">
+                                    <img src="img/victus.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop HP Victus 15-FA1155TX 952R1PA</h6>
+                                    <h5 class="price">17.990.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-5 g-2">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 15%</span>
+                                <div class="product__image">
+                                    <img src="img/vivo.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop ASUS Gaming VivoBook K3605ZF-RP634W</h6>
+                                    <h5 class="price">17.290.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 23%</span>
+                                <div class="product__image">
+                                    <img src="img/ze.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop ASUS ROG Zephyrus G16 GA605WI-QR090WS</h6>
+                                    <h5 class="price">77.990.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 9%</span>
+                                <div class="product__image">
+                                    <img src="img/7.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop Acer Aspire 7 A715-76G-5806</h6>
+                                    <h5 class="price">18.790.000đ                                </h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 10%</span>
+                                <div class="product__image">
+                                    <img src="img/dell.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop Gaming Acer Nitro 5 Tiger AN515 58 773Y</h6>
+                                    <h5 class="price">23.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 3%</span>
+                                <div class="product__image">
+                                    <img src="img/nitro5.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop Dell Inspiron 15 3520 6R6NK</h6>
+                                    <h5 class="price">13.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+         </div>
+        
+         <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-5 g-2">
+                <!-- Card 1 -->
+                <div class="col">
+                    <a href="com.html" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 10%</span>
+                            <div class="product__image">
+                                <img src="img/macbook_5_1.webp" class="card-img-top" alt="Product image">
+                            </div>
+                            
+                            <div class="card-body">
+                                <h6 class="card-title">Apple MacBook Air M1 256GB 2020</h6>
+                                <h5 class="price">18.490.000đ</h5>
+                                <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="col">
+                    <a href="page1.html" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 12%</span>
+                            <div class="product__image">
+                                <img src="img/gf63.webp" class="card-img-top" alt="Product image">
+                            </div>
+                            
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop MSI Gaming GF63 Thin 11UC-1228VN</h6>
+                                <h5 class="price">16.490.000đ
+                                </h5>
+                                <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="col">
+                    <a href="page1.html" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 19%</span>
+                            <div class="product__image">
+                                <img src="img/lenovo.webp" class="card-img-top" alt="Product image">
+                            </div>
+                            
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop Lenovo LOQ 15IAX9 83GS001RVN</h6>
+                                <h5 class="price">21.290.000đ</h5>
+                                <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="col">
+                    <a href="page1.html" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 12%</span>
+                            <div class="product__image">
+                                <img src="img/tuf.webp" class="card-img-top" alt="Product image">
+                            </div>
+                            
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop ASUS TUF Gaming A15 FA506NF-HN005W</h6>
+                                <h5 class="price">15.490.000đ</h5>
+                                <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="col">
+                    <a href="page1.html" class="text-decoration-none">
+                        <div class="card position-relative">
+                            <span class="discount-badge">Giảm 4%</span>
+                            <div class="product__image">
+                                <img src="img/victus.webp" class="card-img-top" alt="Product image">
+                            </div>
+                            
+                            <div class="card-body">
+                                <h6 class="card-title">Laptop HP Victus 15-FA1155TX 952R1PA</h6>
+                                <h5 class="price">17.990.000đ</h5>
+                                <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action -->
+        <div class="text-center mb-4">
+            <div class="view-more-container">
+                <a class="btn btn-danger view-more-btn" href="catalog-page.html">Xem thêm sản phẩm</a>
+                
+            </div>
+        </div>
+      
+            <div class="container">
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
+                    <div class="col-xxl-8 item"><a href=""><img class="img-fluid" src="assets/img/banner1.webp"                                        width="861" height="278"></a></div>
+                    <div class="col-xxl-4 item"><a href=""><img class="img-fluid" src="assets/img/banner2.webp"                                        width="427" height="135" style="margin-bottom: 7px;"></a><img class="img-fluid" src="assets/img/banner3.webp" width="427" height="135"></div>
+                </div>
+            </div>
+            <!-- ============================================================================================== --> 
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-5 g-2">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <a href="com.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 10%</span>
+                                <div class="product__image">
+                                    <img src="img/phim1.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Apple MacBook Air M1 256GB 2020</h6>
+                                    <h5 class="price">18.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 12%</span>
+                                <div class="product__image">
+                                    <img src="img/phim2.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop MSI Gaming GF63 Thin 11UC-1228VN</h6>
+                                    <h5 class="price">16.490.000đ
+                                    </h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 19%</span>
+                                <div class="product__image">
+                                    <img src="img/phim3.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop Lenovo LOQ 15IAX9 83GS001RVN</h6>
+                                    <h5 class="price">21.290.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 12%</span>
+                                <div class="product__image">
+                                    <img src="img/phim4.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop ASUS TUF Gaming A15 FA506NF-HN005W</h6>
+                                    <h5 class="price">15.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 4%</span>
+                                <div class="product__image">
+                                    <img src="img/phim5.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop HP Victus 15-FA1155TX 952R1PA</h6>
+                                    <h5 class="price">17.990.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-5 g-2">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <a href="com.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 10%</span>
+                                <div class="product__image">
+                                    <img src="img/phim6.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Apple MacBook Air M1 256GB 2020</h6>
+                                    <h5 class="price">18.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 12%</span>
+                                <div class="product__image">
+                                    <img src="img/phim7.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop MSI Gaming GF63 Thin 11UC-1228VN</h6>
+                                    <h5 class="price">16.490.000đ
+                                    </h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 19%</span>
+                                <div class="product__image">
+                                    <img src="img/phim8.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop Lenovo LOQ 15IAX9 83GS001RVN</h6>
+                                    <h5 class="price">21.290.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 12%</span>
+                                <div class="product__image">
+                                    <img src="img/phim9.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop ASUS TUF Gaming A15 FA506NF-HN005W</h6>
+                                    <h5 class="price">15.490.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <a href="page1.html" class="text-decoration-none">
+                            <div class="card position-relative">
+                                <span class="discount-badge">Giảm 4%</span>
+                                <div class="product__image">
+                                    <img src="img/phim10.webp" class="card-img-top" alt="Product image">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="card-title">Laptop HP Victus 15-FA1155TX 952R1PA</h6>
+                                    <h5 class="price">17.990.000đ</h5>
+                                    <p class="extra-discount">Smember giảm thêm đến 185.000đ</p>
+                                    <p class="extra-discount">S-Student giảm thêm đến 500.000đ</p>
+                                    <p class="shipping-info">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+   
+        <section class="photo-gallery py-4 py-xl-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 col-xl-6 text-center mx-auto">
+                        <h1 style="padding-bottom: 0px;margin-bottom: -1px;">CHUỖI CỬA HÀNG</h1>
+                    </div>
+                </div>
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox=""                                      style="padding-bottom: 0px;margin-top: -8px;">
+                    <div class="col-lg-4 col-xl-4 order-md-first">
+                        <div class="card"><img class="card-img w-100 d-block" src="assets/img/dongergo.webp"                                          width="398" height="300">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h5><span                                                                                                             style="color: rgb(255, 255, 255);">DÒNG ERGO</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-md-first">
+                        <div class="card"><img class="card-img w-100 d-block" src="assets/img/dongmx.webp"                                            width="398" height="300">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h5><span                                                                                                             style="color: rgb(255, 255, 255);">DÒNG MX MASTER</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-md-first">
+                        <div class="card"><img class="card-img w-100 d-block" src="assets/img/mx.webp"                                                width="398" height="301">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h5><span                                                                                                             style="color: rgb(255, 255, 255);">MX CHO LẬP TRÌNH VIÊN</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-md-2">
+                        <div class="card"><img class="card-img w-100 d-block" src="assets/img/mx1.webp"                                               width="398" height="300">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h5><span                                                                                                             style="color: rgb(255, 255, 255);">MX CHO VIỆC SÁNG TẠO</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-7 col-xxl-8 order-md-2">
+                        <div class="card"><img class="card-img w-100 d-block" src="assets/img/sansang.webp"                                           width="806" height="301">
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                <h5><span                                                                                                               style="color: rgb(255, 255, 255);">SẴN SÀNG MAN THEO</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <div class="end">
+        
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center text-white bg-dark p-4 rounded shadow">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="img/end.webp" class="img-fluid rounded shadow" alt="Laptop">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Laptop - Người bạn hỗ trợ, phục vụ công việc, học tập, giải trí hiệu quả</h2>
+                    <p class="lh-lg">
+                        Bạn đang tìm kiếm cho mình một sản phẩm máy tính laptop để có thể học tập, làm việc hoặc đơn giản là phục vụ cho nhu cầu giải trí? 
+                        Đâu là các tiêu chí mà bạn có thể cân nhắc để chọn mua được cho mình một chiếc laptop phù hợp với nhu cầu, ngân sách?
+                        Đừng lo! Chúng tôi đã tổng hợp giúp bạn các thông tin quan trọng để tìm được sản phẩm laptop tốt nhất.
+                    </p>
+                    <button class="btn btn-outline-light px-4 py-2">Xem chi tiết</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+   
+    <div class="container mt-5"><hr></div>
+    
+    <div class="container mt-5">
+        
+        <div class="faq-section p-4 rounded shadow-sm bg-white">
+            <h3 class="text-center text-black fw-bold mb-4">CÂU HỎI THƯỜNG GẶP</h3>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Làm sao để chọn mua laptop đúng chuẩn?
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Nên chọn mua laptop bao nhiêu RAM là đủ?
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Sinh viên nên mua laptop nào?
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            CellphoneS có thu cũ đổi mới khi mua laptop không?
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Chính sách trả góp 0% khi mua laptop như thế nào?
+                        </button>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+   <!-- Footer 2 - Bootstrap Brain Component -->
+   <section>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Overlay -->
+      <div class="footer-overlay"></div>
+      
+      <!-- Content container -->
+      <div class="container text-white">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- About Us -->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 footer-column">
+            <h5 class="text-uppercase">Về Chúng Tôi</h5>
+            <p>
+              Chúng tôi là cửa hàng chuyên cung cấp các dòng laptop chính hãng từ các thương hiệu hàng đầu như Dell, HP, Apple, Lenovo, và nhiều hơn nữa. Cam kết sản phẩm chất lượng, giá cả cạnh tranh, và dịch vụ hậu mãi tận tâm.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Customer Support -->
+          <!-- Hỗ Trợ Khách Hàng -->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-column">
+    <h5 class="text-uppercase text-center mb-3">Hỗ Trợ Khách Hàng</h5>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-shield-alt me-2"></i>Chính sách bảo hành
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-exchange-alt me-2"></i>Chính sách đổi trả
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-shopping-cart me-2"></i>Hướng dẫn mua hàng
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-headset me-2"></i>Liên hệ hỗ trợ
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Sản Phẩm -->
+  <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-column">
+    <h5 class="text-uppercase text-center mb-3">Sản Phẩm</h5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-laptop-code me-2"></i>Laptop Gaming
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-laptop-house me-2"></i>Laptop Văn Phòng
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-plug me-2"></i>Phụ kiện Laptop
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fab fa-apple me-2"></i>MacBook
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3 footer-copyright">
+        <footer class="text-white bg-dark"></footer>
+    <footer class="text-center ">
+        <div class="container text-white py-4 py-lg-5" style="margin-top: -60px;margin-bottom: -52px;">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"></li>
+                <li class="list-inline-item me-4"></li>
+                <li class="list-inline-item"></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook text-light">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                    </svg></li>
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter text-light">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"></path>
+                    </svg></li>
+                <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-light">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                    </svg></li>
+            </ul>
+            <p class="text-muted mb-0"><span style="color: rgba(255, 255, 255, 0.75);">Copyright © 2024 Brand</span></p>
+        </div>
+    </footer>
+    <footer class="text-white bg-dark"></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  
+  
+</body>
+<script src="index.js"></script>
+
+</html>

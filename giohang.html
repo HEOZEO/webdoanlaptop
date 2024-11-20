@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assetss/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assetss/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assetss/css/vanilla-zoom.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+     <!-- menu -->
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo ROG -->
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logorog1.png" alt="Republic of Gamers">
+        </a>
+
+        <!-- Menu Links Centered -->
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mua Hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sáng Tạo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tải Xuống</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cộng Đồng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nổi Bật</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hỗ Trợ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đại Lý</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Search Box and Cart Icon -->
+        <div class="d-flex align-items-center">
+            <div class="search-box">
+                <img src="img/timkiem.png" alt="tìm kiếm" id="searchIcon" onclick="toggleSearch()">
+            </div>
+            <div class="cart-icon">
+                <a href="#">
+                    <img src="img/cart.png" alt="Cart">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+        <input type="text" class="form-control" placeholder="Tìm kiếm...">
+        <span class="close-search" onclick="toggleSearch()">&times;</span>
+    </div>
+</nav>
+    <!-- end menu -->
+
+     
+   
+    <!-- Main Container -->
+    <main class="page shopping-cart-page">
+        <section class="clean-block clean-cart dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info"><span style="color: rgb(0, 0, 0);">GIỎ HÀNG</span></h2>
+                </div>
+                <div class="content">
+                    <div class="row g-0">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="items">
+                                <div class="product">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-md-3">
+                                            <div class="product-image"><img class="img-fluid d-block mx-auto image" src="img/macbook_5_1.webp"></div>
+                                        </div>
+                                        <div class="col-md-5 product-info"><a class="product-name" href="#"><strong><span style="color: rgb(0, 0, 0);">Apple MacBook Air M1 256GB 2020</span></strong></a>
+                                            <div class="product-specs">
+                                                <div><span>Display:&nbsp;</span><span class="value">5 inch</span></div>
+                                                <div><span>RAM:&nbsp;</span><span class="value">4GB</span></div>
+                                                <div><span>Memory:&nbsp;</span><span class="value">32GB</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 quantity"><label class="form-label d-none d-md-block" for="quantity">SỐ LƯỢNG</label><input type="number" id="number" class="form-control quantity-input" value="1"></div>
+                                        <div class="col-6 col-md-2 price"><span style="margin-right: 57px;padding-right: 81px;margin-left: -21px;padding-left: 7px;">18.490.000đ</span></div>
+                                    </div>
+                                </div>
+                                <div class="product"></div>
+                                <div class="product"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="bg-body-tertiary summary">
+                                <h3>hóa đơn</h3>
+                                <h4 class="border-primary-subtle" style="border-color: var(--bs-primary-border-subtle);"><span class="text">TỔNG</span><span class="price">18.490.000đ</span></h4>
+                                <h4><span class="text">GIẢM GIÁ</span><span class="price">$0</span></h4>
+                                <h4><span class="text">VẬN CHUYỂN</span><span class="price">$0</span></h4>
+                                <h4><span class="text">TỔNG CỘNG</span><span class="price">18.490.000đ</span></h4><button class="btn btn-primary btn-lg d-block w-100" type="button">MUA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+   <!-- Footer 2 - Bootstrap Brain Component -->
+   <section>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Overlay -->
+      <div class="footer-overlay"></div>
+      
+      <!-- Content container -->
+      <div class="container text-white">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- About Us -->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 footer-column">
+            <h5 class="text-uppercase">Về Chúng Tôi</h5>
+            <p>
+              Chúng tôi là cửa hàng chuyên cung cấp các dòng laptop chính hãng từ các thương hiệu hàng đầu như Dell, HP, Apple, Lenovo, và nhiều hơn nữa. Cam kết sản phẩm chất lượng, giá cả cạnh tranh, và dịch vụ hậu mãi tận tâm.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Customer Support -->
+          <!-- Hỗ Trợ Khách Hàng -->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-column">
+    <h5 class="text-uppercase text-center mb-3">Hỗ Trợ Khách Hàng</h5>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-shield-alt me-2"></i>Chính sách bảo hành
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-exchange-alt me-2"></i>Chính sách đổi trả
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-shopping-cart me-2"></i>Hướng dẫn mua hàng
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-headset me-2"></i>Liên hệ hỗ trợ
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Sản Phẩm -->
+  <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-column">
+    <h5 class="text-uppercase text-center mb-3">Sản Phẩm</h5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-laptop-code me-2"></i>Laptop Gaming
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-laptop-house me-2"></i>Laptop Văn Phòng
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fas fa-plug me-2"></i>Phụ kiện Laptop
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="footer-link">
+          <i class="fab fa-apple me-2"></i>MacBook
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3 footer-copyright">
+        <footer class="text-white bg-dark"></footer>
+    <footer class="text-center ">
+        <div class="container text-white py-4 py-lg-5" style="margin-top: -60px;margin-bottom: -52px;">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"></li>
+                <li class="list-inline-item me-4"></li>
+                <li class="list-inline-item"></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook text-light">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                    </svg></li>
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter text-light">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"></path>
+                    </svg></li>
+                <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-light">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                    </svg></li>
+            </ul>
+            <p class="text-muted mb-0"><span style="color: rgba(255, 255, 255, 0.75);">Copyright © 2024 Brand</span></p>
+        </div>
+    </footer>
+    <footer class="text-white bg-dark"></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  
+  
+</body>
+<script src="index.js"></script>
+<script src="script.js"></script>
+<script>
+  // Lấy giỏ hàng từ Local Storage
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartItems = document.getElementById("cart-items");
+  const totalDisplay = document.getElementById("total");
+
+  function updateCartDisplay() {
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    // Hiển thị từng sản phẩm
+    cart.forEach((item, index) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        ${item.name} - ${item.price} VND
+        <button class="delete-btn" onclick="removeFromCart(${index})">Xóa</button>
+      `;
+      cartItems.appendChild(li);
+      total += item.price;
+    });
+
+    // Cập nhật tổng tiền
+    totalDisplay.textContent = total;
+  }
+
+  function removeFromCart(index) {
+    // Xóa sản phẩm khỏi mảng cart
+    cart.splice(index, 1);
+
+    // Cập nhật lại Local Storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Cập nhật giao diện
+    updateCartDisplay();
+  }
+
+  // Hiển thị giỏ hàng ban đầu
+  updateCartDisplay();
+</script>
+</html>
